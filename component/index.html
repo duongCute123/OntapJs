@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<h1>Lập trình thiết bị di động tuần 1</h1>
+<h2 id="hi"></h2>
 
 <body>
     <script>
@@ -20,11 +22,11 @@
         inputbt.setAttribute("id", "inputbt")
         inputbt.textContent = "Submit"
         document.body.appendChild(inputbt);
-        inputbt.onclick = function() {
+        inputbt.onclick = function () {
             var a = parseInt(inputa.value)
             var b = parseInt(inputb.value)
             var sum = a + b
-            alert(sum)
+            document.getElementById("hi").innerHTML="Kết quả của phép cộng:\t"+sum
         }
     </script>
 </body>
